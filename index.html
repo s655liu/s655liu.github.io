@@ -1,12 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shawn Liu Website</title>
-</head>
-<body>
-    <h1>Welcome to My Website</h1>
-    <p>This is a simple website hosted on GitHub Pages.</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shawn Liu</title> 
+    <link rel="stylesheet" href="styles.css" />  
+  </head>
+
+  <body> 
+    <div class="socials">
+      <a href="https://github.com/s655liu" class="github"><i class="fa fa-github"></i></a> 
+      <a href="https://www.linkedin.com/in/shawn-liu-399448170/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+      <a href="mailto:s655liu@uwaterloo.ca" class="email"><i class="fa fa-envelope"></i></a>
+    </div>
+    <div class="container">
+      <header>
+          <a class="logo" href="#">Shawn Liu</a>
+          <nav>
+              <div class="hamburger" id="hamburger">
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>
+              </div>
+
+              <ul class="nav-links" id="nav-links">
+                  <li><a href="#about">ABOUT</a></li>
+                  <li><a href="#projects">PROJECTS</a></li>
+                  <li><a href="https://drive.google.com/file/d/1p01UByJg8SINugad1QzLjTLuz-6E3sNK/view?usp=sharing">RÉSUMÉ</a></li>
+              </ul>
+          </nav>
+      </header>
+    </div>
+
+    <!-- Home section-->
+    <div class="home">
+        <div class="wad-text">
+          <div class="text1">Shawn Liu</div>
+          <div class="text-animation">
+            I'm a
+            <span
+              class="txt-rotate"
+              data-period="2000"
+              data-rotate='["Developer.", "Problem Solver.", "Traveler.", "Student."]'
+            >
+            </span>
+          </div>
+        </div>
+        <div class="img-crop">
+          <img src="images/wad.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- About section-->
+    <div class="waves"></div>
+    <div class="container-about" id="about">
+      <h1>About Wad</h1>
+      <div class="about-content">
+        <div class="cd">
+          <img src="images/uw.png" alt="">
+          <h2>UW CS 2025</h2>
+          <p>Currently in my 4A term as a CS student at the University of Waterloo, class of 2025.</p>
+        </div>
+        <div class="cd">
+          <img src="images/fit.png" alt="">
+          <h2>Gym/Fitness</h2>
+          <p>When I'm not working, you will find me at the gym. I love going to the gym and working out, and playing sports like soccer and basketball. </p>
+        </div>
+        <div class="cd">
+          <a href="#"><img src="images/cam.jpg" alt=""></a>
+          <h2>Photography</h2>
+          <p>I enjoy travelling and exploring the world, which is how I got into photography. I take pictures of many things, take a look at my gallery (Available soon)!</p>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <!-- Projects section-->
+    <div class="wavesb"></div>
+    <div class="container-project" id="projects">
+      <h1>Projects</h1>
+      <div class="project-content">
+        <div class="grid-content">
+          <div class="text">
+            <h1>Univibe</h1>
+            <p>Univibe is a campus exploration app that helps students share and discover interesting places around campus. Users can create their own profiles and post about unique places or events around their university, and earn awards based on their activity on the app!</p>
+          </div>
+          <div class="img-crop">
+            <a href="https://github.com/SowadK25/Univibe"><img src="images/UnivibeLogo.png" alt=""></a>
+          </div>
+        </div>
+
+        <div class="grid-content">
+          <div class="img-crop">
+            <a href="https://github.com/SowadK25/WLP4-Lang-Compiler"><img src="images/code.gif" alt=""></a>
+          </div>
+          <div class="text">
+            <h1>WLP4 Compiler</h1>
+            <p>WLP4 is a programming language that is a subset of C++. WLP4 programs are compiled into MIPS assembly code which are then converted and linked to machine code to execute the users written program. The compiler goes through the 4 main stages of compilation, including scanning, parsing, context-sensative analysis, and code generation. Another language to learn :)</p>
+          </div>
+        </div>
+
+        <div class="grid-content">
+          <div class="text">
+            <h1>YelpCamp</h1>
+            <p>YelpCamp is an application where users can create profiles and upload their favourite campsites for others to see. Users can view the campground posts of others and write reviews for them. It also features an interactive cluster map using geolocation to track campgrounds' locations.</p>
+          </div>
+          <div class="img-crop">
+            <a href="https://github.com/SowadK25/YelpCamp"><img src="images/yelpcamp.png" alt=""></a>
+          </div>
+        </div>
+
+        <div class="grid-content" >
+          <div class="img-crop">
+            <a href="https://github.com/FarzadR-Dev/GameJam2020-WON-AWARD-"><img src="images/gamejam.jpg" alt=""></a>
+          </div>
+          <div class="text">
+            <h1>Tales of Nuiryn</h1>
+            <p>Tales of Nuiryn is a 3D fantasy RPG game developed in Unity. This was a submission for the 2020 Game Institute's Game Jam, where I was one of the lead developers. Our submission also received an award for being the most creative (playable demo available soon)!</p>
+          </div>
+        </div>
+
+        <div class="grid-content">
+          <div class="text">
+            <h1>Oakwald Escapade</h1>
+            <p>Oakwald Escapade is a 2D game where there is a lone hunter in a field that has to fight off waves of ghosts for survival. Players can choose between 4 maps with different difficulties, with each wave of ghosts getting proggesively harder. After beating 4 waves, the player wins the game. Executable game file also available soon.</p>
+          </div>
+          <div class="img-crop">
+            <a href="https://github.com/SowadK25/Oakwald_Escapade-RPG-Game"><img src="images/oakwald.png" alt=""></a>
+          </div>
+        </div>
+
+        <div class="grid-content">
+          <div class="img-crop">
+            <a href="https://github.com/SowadK25/Craps-Dice-Game-App"><img src="images/craps.jpg" alt=""></a>
+          </div>
+          <div class="text">
+            <h1>Craps!</h1>
+            <p>Craps is a common dice game that is played in casinos. It is a game of chance, where players bet on the outcomes of a pair of dice. This iOS application re-creates this game, but virtually. Note that the app is not published on the app store, but the repo is available.</p>
+          </div>
+        </div>
+
+        <div class="grid-content">
+          <div class="text">
+            <h1>Check Out More!</h1>
+            <p>I have many more projects and applications available on my GitHub! Some of these include some python games like hangman, other web or iOS applications, and some university projects in C/C++ (these are private for academic reasons, if needed please contact me).</p>
+          </div>
+          <div class="img-crop">
+            <a href="https://github.com/SowadK25"><img src="images/github-cover.jpg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+     src ="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="text-animation.js"></script>
+    <script src="index.js"></script>
+  </body>
 </html>
